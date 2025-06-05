@@ -11,7 +11,7 @@
 
 **ผู้จัดทำโครงงาน:** (โปรดเขียนข้อมูลผู้จัดทำโครงงานตามฟอร์แมตดังแสดงในตัวอย่างด้านล่าง)
 1. นางสาวปรียนันท์ ชานุ  6409680045  preyanan.cha@dome.tu.ac.th
-2. นายสรรพวิชช์ ช่องดารากุล  
+2. นายสรรพวิชช์ ช่องดารากุล 6409610786  sappawit.cho@dome.tu.ac.th 
    
 Manual / Instructions for your projects starts here !
 # Topic 1
