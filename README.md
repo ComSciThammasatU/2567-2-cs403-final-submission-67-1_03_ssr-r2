@@ -5,7 +5,8 @@
 
 **ชื่อโครงงาน (ไทย): เว็ปไซต์ติดตามนโยบาย กิจกิกรรม และการเงิน ของพรรคการเมือง** 
 
-**Project Title (Eng):** ระบุชื่อโครงงานภาษาอังกฤษซึ่งเขียนด้วยตัวอักษรภาษาอังกฤษตัวพิมพ์ใหญ่ทั้งหมดที่นี่ เช่น QR CODE ORDERRING 
+**Project Title (Eng): Policy Tracking Website for monitoring the policies, activities, and finances of political parties. **
+
 
 **อาจารย์ที่ปรึกษาโครงงาน:** ผศ. ดร. ทรงศักดิ์ รองวิริยะพาณิชย์
 
