@@ -1,0 +1,9 @@
+เว็บไซต์ติดตามนโยบาย  กิจกรรม และการเงินของพรรคการเมือง
+Policy Tracking Website for monitoring the policies, activities, and finances of political parties.
+
+ABSTRACT
+This project aims to develop a web-based platform for monitoring and visualizing the progress of political party policies proposed during election campaigns. The system is designed to present structured information about policies, associated projects, and related activities in an organized and comprehensible manner. Users can track the progress of each policy through predefined stages initiation, planning, decision-making, implementation, and evaluation and explore relevant project details and activities across various regions via an intuitive and responsive interface.
+The system consists of a web application and an interactive dashboard. The application frontend is developed using React.js, with a backend implemented in Node.js and deployed via an NGINX web server. Data is managed using Neo4j as a graph database to model the relationships among policies, parties, and projects; PostgreSQL is used for managing financial data, while Firebase serves as the document-based storage for party members and supplementary files.
+For data visualization, the system incorporates a dynamic dashboard that allows users to interact with policy progress metrics. Additionally, it integrates with the Google Maps API to display the geographic locations of political activities across regions and provinces. This enables users to gain a comprehensive and verifiable overview of each party’s policy implementation efforts, thereby enhancing political transparency and public awareness.
+
+Keywords: Website, Political parties, Policy, Activity updates
