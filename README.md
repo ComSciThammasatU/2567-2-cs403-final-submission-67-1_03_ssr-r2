@@ -14,7 +14,8 @@
 1. นางสาวปรียนันท์ ชานุ  6409680045  preyanan.cha@dome.tu.ac.th
 2. นายสรรพวิชช์ ช่องดารากุล 6409610786  sappawit.cho@dome.tu.ac.th 
    
-Manual / Instructions for your projects starts here !
-# Topic 1
-# Topic 2 
-# Topic 3
+# ชุดโปรแกรมที่ต้องติดตั้งเพิ่มเติม
+**1.pgAdmin:** 
+**2.Neo4j:** 
+# โครงสร้างโฟลเดอร์ย่อย
+# วิธีการใช้งานแอพพลิเคชั่น
