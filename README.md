@@ -19,7 +19,7 @@
 **1.pgAdmin:** ให้คุณติ้กโหลดแพคเกจ postgreSQL ไปด้วยเลยจะได้ไม่ต้องลงแยก<br>
 &emsp;**กำหนดชื่อ Database ดังนี้: policy tracker** <br>
 
-&emsp;**campaigns** <br>
+&emsp;**ตาราง campaigns** <br>
 
       CREATE TABLE IF NOT EXISTS public.campaigns (
           id               INTEGER GENERATED ALWAYS AS IDENTITY PRIMARY KEY,
@@ -33,7 +33,7 @@
           party_id         INTEGER NOT NULL
       );
 
-&emsp;**expenses** <br>
+&emsp;**ตาราง expenses** <br>
 
       CREATE TABLE IF NOT EXISTS public.expenses (
           id           INTEGER GENERATED ALWAYS AS IDENTITY PRIMARY KEY,
@@ -43,14 +43,14 @@
           created_at   TIMESTAMP WITHOUT TIME ZONE DEFAULT now()
       );
 
-&emsp;**parties** <br>
+&emsp;**ตาราง parties** <br>
 
       CREATE TABLE IF NOT EXISTS public.parties (
           id   INTEGER GENERATED ALWAYS AS IDENTITY PRIMARY KEY,
           name TEXT
       );
 
-&emsp;**policies** <br>
+&emsp;**ตาราง policies** <br>
 
       CREATE TABLE IF NOT EXISTS public.policies (
           id           INTEGER GENERATED ALWAYS AS IDENTITY PRIMARY KEY,
