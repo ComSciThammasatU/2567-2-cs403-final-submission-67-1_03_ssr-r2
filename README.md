@@ -20,6 +20,36 @@
 
 **2.Neo4j:** 
 
+      CREATE CONSTRAINT campaign_id_unique IF NOT EXISTS
+      FOR (c:Campaign) REQUIRE c.id IS UNIQUE;
+      
+      CREATE CONSTRAINT specialcampaign_id_unique IF NOT EXISTS
+      FOR (sc:SpecialCampaign) REQUIRE sc.id IS UNIQUE;
+      
+      CREATE CONSTRAINT category_id_unique IF NOT EXISTS
+      FOR (cat:Category) REQUIRE cat.id IS UNIQUE;
+      
+      CREATE CONSTRAINT event_id_unique IF NOT EXISTS
+      FOR (e:Event) REQUIRE e.id IS UNIQUE;
+      
+      CREATE CONSTRAINT fingerprint_id_unique IF NOT EXISTS
+      FOR (f:Fingerprint) REQUIRE f.id IS UNIQUE;
+      
+      CREATE CONSTRAINT likeLog_id_unique IF NOT EXISTS
+      FOR (l:LikeLog) REQUIRE l.id IS UNIQUE;
+      
+      CREATE CONSTRAINT party_id_unique IF NOT EXISTS
+      FOR (p:Party) REQUIRE p.id IS UNIQUE;
+      
+      CREATE CONSTRAINT policy_id_unique IF NOT EXISTS
+      FOR (p:Policy) REQUIRE p.id IS UNIQUE;
+      
+      CREATE CONSTRAINT province_id_unique IF NOT EXISTS
+      FOR (pr:Province) REQUIRE pr.id IS UNIQUE;
+      
+      CREATE CONSTRAINT region_id_unique IF NOT EXISTS
+      FOR (r:Region) REQUIRE r.id IS UNIQUE;
+
 **3.Git:** 
 
 **4.Node.js:** 
@@ -32,11 +62,17 @@
 
 **PolicyTracker** <br>
 &emsp;**public** <br>
+
    &emsp;&emsp;**banner** <br>
    &emsp;&emsp;**bg** <br>
    &emsp;&emsp;**member** <br> 
    &emsp;&emsp;**ref** <br>
      
 &emsp;**src** <br>
+
+   &emsp;&emsp;**app** <br>
+   &emsp;&emsp;**components/ui** <br>
+   &emsp;&emsp;**lib** <br> 
+   &emsp;&emsp;**types** <br>
 
 # วิธีการใช้งานแอพพลิเคชั่น
