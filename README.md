@@ -32,6 +32,11 @@
 
 **PolicyTracker** <br>
 &emsp;**public** <br>
+   &emsp;**banner** <br>
+   &emsp;**bg** <br>
+   &emsp;**member** <br> 
+   &emsp;**ref** <br>
+     
 &emsp;**src** <br>
 
 # วิธีการใช้งานแอพพลิเคชั่น
