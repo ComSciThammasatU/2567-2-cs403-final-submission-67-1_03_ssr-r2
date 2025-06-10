@@ -11,12 +11,13 @@
 
 **อาจารย์ที่ปรึกษาโครงงาน:** ผศ. ดร. ทรงศักดิ์ รองวิริยะพาณิชย์
 
-**ผู้จัดทำโครงงาน:** 
+**ผู้จัดทำโครงงาน:** <br>
 1. นางสาวปรียนันท์ ชานุ  6409680045  preyanan.cha@dome.tu.ac.th
 2. นายสรรพวิชช์ ช่องดารากุล 6409610786  sappawit.cho@dome.tu.ac.th 
    
 # ชุดโปรแกรมที่ต้องติดตั้งเพิ่มเติม
 **1.pgAdmin:** ให้คุณติ้กโหลดแพคเกจ postgreSQL ไปด้วยเลยจะได้ไม่ต้องลงแยก<br>
+
 &emsp;**กำหนดชื่อ Database ดังนี้: policy tracker** <br>
 
 &emsp;**ตาราง campaigns** <br>
@@ -120,7 +121,8 @@
       
       CREATE INDEX idx_expenses_campaign_id ON public.expenses(campaign_id);
 
-**2.Neo4j:** 
+**2.Neo4j:** <br>
+&emsp;**สร้าง index** <br>
 
       CREATE CONSTRAINT campaign_id_unique IF NOT EXISTS
       FOR (c:Campaign) REQUIRE c.id IS UNIQUE;
@@ -152,7 +154,16 @@
       CREATE CONSTRAINT region_id_unique IF NOT EXISTS
       FOR (r:Region) REQUIRE r.id IS UNIQUE;
 
-**3.Git:** 
+**3.Git:** <br>
+เข้าไปที่ https://git-scm.com/download/win <br>
+
+ดาวน์โหลดไฟล์ “Git-*-64-bit.exe”<br>
+
+รันไฟล์ ตอบ Next ไปเรื่อยๆ (ตั้งค่า default ได้เลย)<br>
+
+เปิด Git Bash ตรวจสอบด้วยคำสั่ง ถ้าชึ้นเลขเวอร์ชันแปลว่าใช้งานได้<br>
+
+     git --version
 
 **4.Node.js:** 
 
@@ -173,6 +184,30 @@
 &emsp;**src** <br>
 
    &emsp;&emsp;**app** <br>
+      &emsp;&emsp;&emsp;**about** <br>
+      &emsp;&emsp;&emsp;**admin** <br>
+      &emsp;&emsp;&emsp;**api** <br>
+      &emsp;&emsp;&emsp;**budget/[policyName]** <br>
+      &emsp;&emsp;&emsp;**campaign** <br>
+      &emsp;&emsp;&emsp;**campaigndetail/[id]** <br>
+      &emsp;&emsp;&emsp;**components** <br>
+      &emsp;&emsp;&emsp;**event** <br>
+      &emsp;&emsp;&emsp;**eventdetail/[id]** <br>
+      &emsp;&emsp;&emsp;**lib** <br>
+      &emsp;&emsp;&emsp;**login** <br>
+      &emsp;&emsp;&emsp;**party** <br>
+      &emsp;&emsp;&emsp;**policycategory** <br>
+      &emsp;&emsp;&emsp;**policydetail[id]** <br>
+      &emsp;&emsp;&emsp;**pr** <br>
+      &emsp;&emsp;&emsp;**prCampiagn** <br>
+      &emsp;&emsp;&emsp;**prCampiagnForm** <br>
+      &emsp;&emsp;&emsp;**prEvent** <br>
+      &emsp;&emsp;&emsp;**prEventFrom** <br>
+      &emsp;&emsp;&emsp;**prEventFromEdit** <br>
+      &emsp;&emsp;&emsp;**prPartyInfoForm** <br>
+      &emsp;&emsp;&emsp;**prPolicy** <br>
+      &emsp;&emsp;&emsp;**prPolicyFrom** <br>
+      &emsp;&emsp;&emsp;**styles** <br>
    &emsp;&emsp;**components/ui** <br>
    &emsp;&emsp;**lib** <br> 
    &emsp;&emsp;**types** <br>
