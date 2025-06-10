@@ -174,42 +174,87 @@
 # โครงสร้างโฟลเดอร์ย่อย
 
 **PolicyTracker** <br>
-&emsp;**public** <br>
-
-   &emsp;&emsp;**banner** <br>
-   &emsp;&emsp;**bg** <br>
-   &emsp;&emsp;**member** <br> 
-   &emsp;&emsp;**ref** <br>
-     
-&emsp;**src** <br>
-
-   &emsp;&emsp;**app** <br>
-      &emsp;&emsp;&emsp;**about** <br>
-      &emsp;&emsp;&emsp;**admin** <br>
-      &emsp;&emsp;&emsp;**api** <br>
-      &emsp;&emsp;&emsp;**budget/[policyName]** <br>
-      &emsp;&emsp;&emsp;**campaign** <br>
-      &emsp;&emsp;&emsp;**campaigndetail/[id]** <br>
-      &emsp;&emsp;&emsp;**components** <br>
-      &emsp;&emsp;&emsp;**event** <br>
-      &emsp;&emsp;&emsp;**eventdetail/[id]** <br>
-      &emsp;&emsp;&emsp;**lib** <br>
-      &emsp;&emsp;&emsp;**login** <br>
-      &emsp;&emsp;&emsp;**party** <br>
-      &emsp;&emsp;&emsp;**policycategory** <br>
-      &emsp;&emsp;&emsp;**policydetail[id]** <br>
-      &emsp;&emsp;&emsp;**pr** <br>
-      &emsp;&emsp;&emsp;**prCampiagn** <br>
-      &emsp;&emsp;&emsp;**prCampiagnForm** <br>
-      &emsp;&emsp;&emsp;**prEvent** <br>
-      &emsp;&emsp;&emsp;**prEventFrom** <br>
-      &emsp;&emsp;&emsp;**prEventFromEdit** <br>
-      &emsp;&emsp;&emsp;**prPartyInfoForm** <br>
-      &emsp;&emsp;&emsp;**prPolicy** <br>
-      &emsp;&emsp;&emsp;**prPolicyFrom** <br>
-      &emsp;&emsp;&emsp;**styles** <br>
-   &emsp;&emsp;**components/ui** <br>
-   &emsp;&emsp;**lib** <br> 
-   &emsp;&emsp;**types** <br>
+PolicyTracker/
+├─ public/
+│  ├─ banner/
+│  ├─ bg/
+│  ├─ member/
+│  └─ ref/
+└─ src/
+   ├─ app/
+   │  ├─ about/
+   │  ├─ admin/
+   │  │  ├─ party/
+   │  │  │  ├─ create/
+   │  │  │  └─ edit/
+   │  │  │     └─ [id]/
+   │  │  ├─ signup/
+   │  │  └─ userlist/
+   │  ├─ api/
+   │  │  ├─ admin/
+   │  │  │  ├─ getAllParties/
+   │  │  │  ├─ party/
+   │  │  │  │  └─ [id]/
+   │  │  │  └─ users/
+   │  │  │     └─ [uid]/
+   │  │  ├─ banner/
+   │  │  ├─ budget-summary/
+   │  │  ├─ campaign/
+   │  │  ├─ campaignbanner/
+   │  │  │  └─ [id]/
+   │  │  ├─ campaigndetail/
+   │  │  │  └─ [id]/
+   │  │  ├─ campaignlike/
+   │  │  ├─ campaignsExpenses/
+   │  │  ├─ clear-likelog/
+   │  │  ├─ dashboard/
+   │  │  │  └─ parties/
+   │  │  ├─ event/
+   │  │  │  ├─ province/
+   │  │  │  │  └─ [province]/
+   │  │  │  │     └─ region/
+   │  │  │  │        └─ [region]/
+   │  │  │  └─ region/
+   │  │  │     └─ [region]/
+   │  │  ├─ eventdetail/
+   │  │  │  └─ [id]/
+   │  │  ├─ expenses/
+   │  │  ├─ home/
+   │  │  │  ├─ progress/
+   │  │  │  └─ summary/
+   │  │  ├─ parties/
+   │  │  ├─ party/
+   │  │  │  └─ [id]/
+   │  │  ├─ policy/
+   │  │  ├─ policybanner/
+   │  │  │  └─ [id]/
+   │  │  ├─ policycategory/
+   │  │  │  └─ [name]/
+   │  │  ├─ policydetail/
+   │  │  │  └─ [id]/
+   │  │  ├─ policylike/
+   │  │  ├─ policyProgress/
+   │  │  ├─ policystatus/
+   │  │  │  └─ [status]/
+   │  │  ├─ pr-campaign/
+   │  │  │  └─ [id]/
+   │  │  ├─ pr-event/
+   │  │  │  └─ [id]/
+   │  │  ├─ pr-partyinfo/
+   │  │  │  └─ [id]/
+   │  │  ├─ pr-policy/
+   │  │  │  └─ [id]/
+   │  │  ├─ prCampaignForm/
+   │  │  ├─ prEventForm/
+   │  │  ├─ prPolicyForm/
+   │  │  └─ scrape-member/
+   │  ├─ components/
+   │  │  └─ ui/
+   │  ├─ lib/
+   │  └─ types/
+   ├─ components/
+   │  └─ ui/
+   ├─ lib/
+   └─ types/
 
 # วิธีการใช้งานแอพพลิเคชั่น
