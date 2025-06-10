@@ -26,12 +26,61 @@
 
 &emsp;**เพิ่ม column Total Budget: Sum of [campaigns] allocated_budget** <br>
 
+      UPDATE public.policies
+      SET total_budget = COALESCE(
+        (SELECT SUM(allocated_budget)
+         FROM public.campaigns
+         WHERE policy_id = policies.id), 0
+      );
+      
+      
+      CREATE OR REPLACE FUNCTION public.update_policy_total_budget()
+      RETURNS TRIGGER AS $$
+      BEGIN
+        IF TG_OP = 'INSERT' OR TG_OP = 'UPDATE' THEN
+          UPDATE public.policies
+          SET total_budget = COALESCE(
+            (SELECT SUM(allocated_budget)
+             FROM public.campaigns
+             WHERE policy_id = NEW.policy_id), 0
+          )
+          WHERE id = NEW.policy_id;
+      
+          IF TG_OP = 'UPDATE' AND OLD.policy_id IS DISTINCT FROM NEW.policy_id THEN
+            UPDATE public.policies
+            SET total_budget = COALESCE(
+              (SELECT SUM(allocated_budget)
+               FROM public.campaigns
+               WHERE policy_id = OLD.policy_id), 0
+            )
+            WHERE id = OLD.policy_id;
+          END IF;
+      
+        ELSIF TG_OP = 'DELETE' THEN
+        
+          UPDATE public.policies
+          SET total_budget = COALESCE(
+            (SELECT SUM(allocated_budget)
+             FROM public.campaigns
+             WHERE policy_id = OLD.policy_id), 0
+          )
+          WHERE id = OLD.policy_id;
+        END IF;
+      
+        RETURN NULL; END;
+      $$ LANGUAGE plpgsql;
+      
+      CREATE TRIGGER trg_update_policy_budget
+      AFTER INSERT OR UPDATE OF policy_id, allocated_budget OR DELETE
+      ON public.campaigns
+      FOR EACH ROW
+      EXECUTE FUNCTION public.update_policy_total_budget(
 
 &emsp;**สร้าง index** <br>
       
       CREATE INDEX idx_policies_party_id ON public.policies(party_id);
       
-      CREATE INDEX idx_campaigns_policy_id ON public.campaigns(policy_id); CREATE INDEX idx_campaigns_party_id ON    public.campaigns(party_id);
+      CREATE INDEX idx_campaigns_policy_id ON public.campaigns(policy_id); CREATE INDEX idx_campaigns_party_id ON public.campaigns(party_id);
       
       CREATE INDEX idx_expenses_campaign_id ON public.expenses(campaign_id);
 
