@@ -20,9 +20,45 @@
 &emsp;**กำหนดชื่อ Database ดังนี้: policy tracker** <br>
 
 &emsp;**campaigns** <br>
+
+      CREATE TABLE IF NOT EXISTS public.campaigns (
+          id               INTEGER GENERATED ALWAYS AS IDENTITY PRIMARY KEY,
+          name             TEXT,
+          policy_id        INTEGER,
+          allocated_budget BIGINT,
+          created_at       TIMESTAMP WITHOUT TIME ZONE,
+          area             TEXT,
+          impact           TEXT,
+          size             TEXT,
+          party_id         INTEGER NOT NULL
+      );
+
 &emsp;**expenses** <br>
+
+      CREATE TABLE IF NOT EXISTS public.expenses (
+          id           INTEGER GENERATED ALWAYS AS IDENTITY PRIMARY KEY,
+          campaign_id  INTEGER,
+          description  TEXT,
+          amount       INTEGER,
+          created_at   TIMESTAMP WITHOUT TIME ZONE DEFAULT now()
+      );
+
 &emsp;**parties** <br>
+
+      CREATE TABLE IF NOT EXISTS public.parties (
+          id   INTEGER GENERATED ALWAYS AS IDENTITY PRIMARY KEY,
+          name TEXT
+      );
+
 &emsp;**policies** <br>
+
+      CREATE TABLE IF NOT EXISTS public.policies (
+          id           INTEGER GENERATED ALWAYS AS IDENTITY PRIMARY KEY,
+          name         TEXT,
+          total_budget BIGINT,
+          party_id     INTEGER,
+          created_at   TIMESTAMP WITHOUT TIME ZONE
+      );
 
 &emsp;**เพิ่ม column Total Budget: Sum of [campaigns] allocated_budget** <br>
 
