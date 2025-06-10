@@ -174,87 +174,88 @@
 # โครงสร้างโฟลเดอร์ย่อย
 
 **PolicyTracker** <br>
-PolicyTracker/
-├─ public/
-│  ├─ banner/
-│  ├─ bg/
-│  ├─ member/
-│  └─ ref/
-└─ src/
-   ├─ app/
-   │  ├─ about/
-   │  ├─ admin/
-   │  │  ├─ party/
-   │  │  │  ├─ create/
-   │  │  │  └─ edit/
-   │  │  │     └─ [id]/
-   │  │  ├─ signup/
-   │  │  └─ userlist/
-   │  ├─ api/
-   │  │  ├─ admin/
-   │  │  │  ├─ getAllParties/
-   │  │  │  ├─ party/
-   │  │  │  │  └─ [id]/
-   │  │  │  └─ users/
-   │  │  │     └─ [uid]/
-   │  │  ├─ banner/
-   │  │  ├─ budget-summary/
-   │  │  ├─ campaign/
-   │  │  ├─ campaignbanner/
-   │  │  │  └─ [id]/
-   │  │  ├─ campaigndetail/
-   │  │  │  └─ [id]/
-   │  │  ├─ campaignlike/
-   │  │  ├─ campaignsExpenses/
-   │  │  ├─ clear-likelog/
-   │  │  ├─ dashboard/
-   │  │  │  └─ parties/
-   │  │  ├─ event/
-   │  │  │  ├─ province/
-   │  │  │  │  └─ [province]/
-   │  │  │  │     └─ region/
-   │  │  │  │        └─ [region]/
-   │  │  │  └─ region/
-   │  │  │     └─ [region]/
-   │  │  ├─ eventdetail/
-   │  │  │  └─ [id]/
-   │  │  ├─ expenses/
-   │  │  ├─ home/
-   │  │  │  ├─ progress/
-   │  │  │  └─ summary/
-   │  │  ├─ parties/
-   │  │  ├─ party/
-   │  │  │  └─ [id]/
-   │  │  ├─ policy/
-   │  │  ├─ policybanner/
-   │  │  │  └─ [id]/
-   │  │  ├─ policycategory/
-   │  │  │  └─ [name]/
-   │  │  ├─ policydetail/
-   │  │  │  └─ [id]/
-   │  │  ├─ policylike/
-   │  │  ├─ policyProgress/
-   │  │  ├─ policystatus/
-   │  │  │  └─ [status]/
-   │  │  ├─ pr-campaign/
-   │  │  │  └─ [id]/
-   │  │  ├─ pr-event/
-   │  │  │  └─ [id]/
-   │  │  ├─ pr-partyinfo/
-   │  │  │  └─ [id]/
-   │  │  ├─ pr-policy/
-   │  │  │  └─ [id]/
-   │  │  ├─ prCampaignForm/
-   │  │  ├─ prEventForm/
-   │  │  ├─ prPolicyForm/
-   │  │  └─ scrape-member/
-   │  ├─ components/
-   │  │  └─ ui/
-   │  ├─ lib/
-   │  └─ types/
-   ├─ components/
-   │  └─ ui/
-   ├─ lib/
-   └─ types/
+
+      PolicyTracker/
+      ├─ public/
+      │  ├─ banner/
+      │  ├─ bg/
+      │  ├─ member/
+      │  └─ ref/
+      └─ src/
+         ├─ app/
+         │  ├─ about/
+         │  ├─ admin/
+         │  │  ├─ party/
+         │  │  │  ├─ create/
+         │  │  │  └─ edit/
+         │  │  │     └─ [id]/
+         │  │  ├─ signup/
+         │  │  └─ userlist/
+         │  ├─ api/
+         │  │  ├─ admin/
+         │  │  │  ├─ getAllParties/
+         │  │  │  ├─ party/
+         │  │  │  │  └─ [id]/
+         │  │  │  └─ users/
+         │  │  │     └─ [uid]/
+         │  │  ├─ banner/
+         │  │  ├─ budget-summary/
+         │  │  ├─ campaign/
+         │  │  ├─ campaignbanner/
+         │  │  │  └─ [id]/
+         │  │  ├─ campaigndetail/
+         │  │  │  └─ [id]/
+         │  │  ├─ campaignlike/
+         │  │  ├─ campaignsExpenses/
+         │  │  ├─ clear-likelog/
+         │  │  ├─ dashboard/
+         │  │  │  └─ parties/
+         │  │  ├─ event/
+         │  │  │  ├─ province/
+         │  │  │  │  └─ [province]/
+         │  │  │  │     └─ region/
+         │  │  │  │        └─ [region]/
+         │  │  │  └─ region/
+         │  │  │     └─ [region]/
+         │  │  ├─ eventdetail/
+         │  │  │  └─ [id]/
+         │  │  ├─ expenses/
+         │  │  ├─ home/
+         │  │  │  ├─ progress/
+         │  │  │  └─ summary/
+         │  │  ├─ parties/
+         │  │  ├─ party/
+         │  │  │  └─ [id]/
+         │  │  ├─ policy/
+         │  │  ├─ policybanner/
+         │  │  │  └─ [id]/
+         │  │  ├─ policycategory/
+         │  │  │  └─ [name]/
+         │  │  ├─ policydetail/
+         │  │  │  └─ [id]/
+         │  │  ├─ policylike/
+         │  │  ├─ policyProgress/
+         │  │  ├─ policystatus/
+         │  │  │  └─ [status]/
+         │  │  ├─ pr-campaign/
+         │  │  │  └─ [id]/
+         │  │  ├─ pr-event/
+         │  │  │  └─ [id]/
+         │  │  ├─ pr-partyinfo/
+         │  │  │  └─ [id]/
+         │  │  ├─ pr-policy/
+         │  │  │  └─ [id]/
+         │  │  ├─ prCampaignForm/
+         │  │  ├─ prEventForm/
+         │  │  ├─ prPolicyForm/
+         │  │  └─ scrape-member/
+         │  ├─ components/
+         │  │  └─ ui/
+         │  ├─ lib/
+         │  └─ types/
+         ├─ components/
+         │  └─ ui/
+         ├─ lib/
+         └─ types/
 
 # วิธีการใช้งานแอพพลิเคชั่น
