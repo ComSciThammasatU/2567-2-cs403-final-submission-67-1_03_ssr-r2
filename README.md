@@ -32,10 +32,10 @@
 
 **PolicyTracker** <br>
 &emsp;**public** <br>
-   &emsp;**banner** <br>
-   &emsp;**bg** <br>
-   &emsp;**member** <br> 
-   &emsp;**ref** <br>
+   &emsp;&emsp;**banner** <br>
+   &emsp;&emsp;**bg** <br>
+   &emsp;&emsp;**member** <br> 
+   &emsp;&emsp;**ref** <br>
      
 &emsp;**src** <br>
 
