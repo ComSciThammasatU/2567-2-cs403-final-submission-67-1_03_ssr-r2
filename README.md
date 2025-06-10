@@ -16,7 +16,24 @@
 2. นายสรรพวิชช์ ช่องดารากุล 6409610786  sappawit.cho@dome.tu.ac.th 
    
 # ชุดโปรแกรมที่ต้องติดตั้งเพิ่มเติม
-**1.pgAdmin:** ให้คุณติ้กโหลดแพคเกจ postgreSQL ไปด้วยเลยจะได้ไม่ต้องลงแยก
+**1.pgAdmin:** ให้คุณติ้กโหลดแพคเกจ postgreSQL ไปด้วยเลยจะได้ไม่ต้องลงแยก<br>
+&emsp;**กำหนดชื่อ Database ดังนี้: policy tracker** <br>
+
+&emsp;**campaigns** <br>
+&emsp;**expenses** <br>
+&emsp;**parties** <br>
+&emsp;**policies** <br>
+
+&emsp;**เพิ่ม column Total Budget: Sum of [campaigns] allocated_budget** <br>
+
+
+&emsp;**สร้าง index** <br>
+      
+      CREATE INDEX idx_policies_party_id ON public.policies(party_id);
+      
+      CREATE INDEX idx_campaigns_policy_id ON public.campaigns(policy_id); CREATE INDEX idx_campaigns_party_id ON    public.campaigns(party_id);
+      
+      CREATE INDEX idx_expenses_campaign_id ON public.expenses(campaign_id);
 
 **2.Neo4j:** 
 
