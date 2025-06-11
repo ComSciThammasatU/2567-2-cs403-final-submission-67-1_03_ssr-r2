@@ -17,7 +17,7 @@
    
 # ชุดโปรแกรมที่ต้องติดตั้งเพิ่มเติม
 
-**1.PostgreSQL:**<br> →
+**1.PostgreSQL:**<br> 
 
 เข้าไปที่หน้า https://www.postgresql.org/download/ แล้วเลือกระบบปฏิบัติการ เมื่อไปหน้าถัดไปให้กดเลือก Download the installer เลือก system type ไฟล์จะเริ่มดาวน์โหลด <br>
 
@@ -191,9 +191,51 @@
 
      git --version
 
-**4.Node.js:** 
+ไปที่หน้า repositories ที่ต้องการ clone จากนั้นกด <code> แล้วคัดลอกลิ้งก์ของ git
+เปิด Command Prompt เมื่ออยู่ใน directory ที่ต้องการ (ถ้าไม่ให้ cd pathที่ต้องการ ก่อน)แล้วให้พิมพ์
 
-**5.แอพพลิเคชั่นในการเขียนโค้ด (แนะนำ VS code):** ต้องติดตั้งคำสั่ง npm install ใน terminal ภายใต้ path ของโครงการ
+      git clone ลิ้งก์ที่ก็อปมา
+
+**4.แอพพลิเคชั่นในการเขียนโค้ด (แนะนำ VS code):** 
+
+กด open folder เลือกโฟลเดอร์ที่โคลนไว้ (ชื่อ PolicyTracker)<br>
+กด ที่ตัวโปรเจ็ค → New file → ตั้งชื่อว่า .env.local → เขียนโค้ดดังนี้
+
+      ### 🔗 Neo4j
+      NEO4J_URI=bolt://localhost:7687
+      NEO4J_USER=neo4j
+      NEO4J_PASSWORD=your password ← รหัสผ่านที่คุณตั้ง
+      
+      ### 🐘 PostgreSQL (ถ้ามีใช้)
+      POSTGRES_USER=postgres
+      POSTGRES_PASSWORD=your password ← รหัสผ่านที่คุณตั้ง
+      POSTGRES_DB=policy_tracker
+      POSTGRES_HOST=localhost
+      POSTGRES_PORT=5432
+      
+      
+      ### 🔥 Firebase
+      NEXT_PUBLIC_FIREBASE_API_KEY=AIzaSyCaFgsyBvv7xYOfsQM-wf7P7kx7JJ9OubA
+      NEXT_PUBLIC_FIREBASE_AUTH_DOMAIN=policy-tracker-kp.firebaseapp.com
+      NEXT_PUBLIC_FIREBASE_PROJECT_ID=policy-tracker-kp
+      NEXT_PUBLIC_FIREBASE_STORAGE_BUCKET=policy-tracker-kp.firebasestorage.app
+      NEXT_PUBLIC_FIREBASE_MESSAGING_SENDER_ID=1042626131048
+      NEXT_PUBLIC_FIREBASE_APP_ID=1:1042626131048:web:7579b84a38245311ecb7dd
+      NEXT_PUBLIC_FIREBASE_MEASUREMENT_ID=G-C9V0W9VKKZ
+      
+      ### Backend Firebase
+      FIREBASE_PROJECT_ID=policy-tracker-kp
+      FIREBASE_CLIENT_EMAIL=firebase-adminsdk-fbsvc@policy-tracker-kp.iam.gserviceaccount.com
+      FIREBASE_PRIVATE_KEY="-----BEGIN PRIVATE KEY-----\nMIIEvgIBADANBgkqhkiG9w0BAQEFAASCBKgwggSkAgEAAoIBAQDauQiGEG1zT8po\ngEXYmo4xs2KwjD1p/tmTIq3t5pgtJ2SqmdfFlU8qliEMOairbzS0ugPjhEzXA4bq\nDuKgdq4wESGur3gD/UtTXSF8wkdsdJkbihYdbM6emagUjTSW+qV+Fwe5DK5ZsFXA\n1++QRMhU2JlCht/Ir86RHFvgAuN+/0FgGo6jspBhGAWTmy9uurDshGikutqYnHLJ\nctSEHRJ6zDe1pSHW/JUpsAptu3BnCbbTZTwmS/xlNJ7/2gkzk7z42UVCwwkbCHNq\n+DYDFRL+UwkG4XiegLTc+r2KqBdATIXe7JjmpY/e6kch5KwEtnoLfgURH9XQHirk\noR98wLcRAgMBAAECggEADniPh88ubqKo0aEq/dm77q3fqa6doZWq74Er4MGQ7+vb\nTS5AiGIIitjD9vsZnb4Nzqc/+p2WN+OT2YiClftEKwn3IIebeSgZA7r1rDtuXk6Y\nkqngLLI2OWgRJsrw38xVhrIfYK7mGikAg3HF99WVK4fpG+2wgKahFBi8O2X1h0Fc\n0NROMLzaf8Nw1wi8NpAB155xF15Nqn9MbZ3+vovS12bGeJzG71kiyJLgZRLxfyYh\nOmI4kxjk6S17Ci5/oj2OjtSeC7CEuI1i8L1SKL5mSIVrLKw7tVXdgOmBTkBTyL1k\niPXJgqCNRanYnHXYWa+uCn+5QVIFvPx37QFH3wLhwQKBgQDw8/Z+DaTE1YZs7K6C\nREksspM9iUCCXiJE68DII5H1iegQjCNsRy7vXW9ByVDMK6UM/nIPSmWN6ovpMU/A\n1jqHXBE67Plek0KJ/c/RWu5cCZmhhvhCTaWcM+KuC6lwpWqRAn26MmmHqiD5oNKm\nkzrmSa1t3srkdnDd1KmRtYQDXwKBgQDoYa78c2T77AtropSh3xg5JhZwqxmxc1Xf\npGaw80jn2abgWX31FP6kwJVFz6xhCdI4cY7eI5tU2e1rq/g6JrmEO0uH9JLaLASG\nWU4CDiPwK8SFmt5TgeJ8ZKpZqlopYD6xanc51perQ3r/q6u3EKeE/IPaNH/62vax\nlJ54CLpLjwKBgQDbpalHk2xmOjeGR+N0wIbsBgWPDPUPYnxe04Izb6l4aTRxES6h\nX+p7LXNkRv4ugIK+65xSMAGPcwYDl34aTa+hAN58FtXjzt3TKNovAHNU1zODOaRJ\n3LphQDMdcWgOVdxlQB4YhCgLEZ1psZ8VVhVVJEjCZVwTE50jut6xAwTKhQKBgEys\nrogtqwxUfhAtvM0MR3nTz2OtkPS0EYmRPTD1lQCrGBy+aokLPFowERDPzRjXnL1y\n+qjhJseAgI4eV/EYBe5TgkCBulKyY2vQ26Rh9gmw508OIn17Rbe1n1+mjclJMGZp\nsp0q6TBhO5xQkH/+xsdiaj79Q50J0owVdZQ1jQKRAoGBALqLADAJbJxBj12JJDn2\nL1KIX55dgLqVDYlGVi1Hpw0r57RM3SXXqz1/6/z1yX7+yGLYlrGtP797x2xxO5au\nHtS72I1JtuNhgfcIMjbQ0EsZZQ/l+TH3Em+PaES1GC00UMYmP1/AJh7F3WuRkXPe\nFwIwtTLRIrOi+4m+fHc4KtDc\n-----END PRIVATE KEY-----\n"
+      
+      NEXT_PUBLIC_BASE_URL=http://localhost:3000
+      
+      NEXT_PUBLIC_GOOGLE_MAPS_API_KEY=AIzaSyCaFgsyBvv7xYOfsQM-wf7P7kx7JJ9OubA
+      REDIS_URL=rediss://default:AZQpAAIjcDExZjlmODBkNTQ2YWM0NjUxOTFjNzVlMjk1OWZhYWUzY3AxMA@valued-roughy-37929.upstash.io:6379
+
+**5.Node.js:**
+
+ต้องติดตั้งคำสั่ง npm install ใน terminal ภายใต้ path ของโครงการ
 
       npm install
 
@@ -201,7 +243,7 @@
 
 **PolicyTracker** <br>
 
-โดย CRUD ย่อมาจากชุดคำสั่งพื้นฐานในการจัดการข้อมูล (โดยเฉพาะกับฐานข้อมูล) ได้แก่:
+เนื่องจากไฟล์มีจำนวนมากจึงจะแสดงแค่โฟลเดอร์ โดย CRUD ย่อมาจากชุดคำสั่งพื้นฐานในการจัดการข้อมูล (โดยเฉพาะกับฐานข้อมูล) ได้แก่:
 
 C – Create
 สร้างข้อมูลใหม่ (เพิ่มเรคอร์ดใหม่ในตาราง)
