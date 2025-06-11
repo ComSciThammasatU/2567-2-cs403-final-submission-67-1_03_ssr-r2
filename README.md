@@ -16,9 +16,16 @@
 2. นายสรรพวิชช์ ช่องดารากุล 6409610786  sappawit.cho@dome.tu.ac.th 
    
 # ชุดโปรแกรมที่ต้องติดตั้งเพิ่มเติม
-**1.pgAdmin:** (ให้ติ้กโหลดแพคเกจ postgreSQL ไปด้วยเลยจะได้ไม่ต้องลงแยก)<br>
 
-เข้าไปที่หน้า https://www.pgadmin.org/download/ แล้วเลือกระบบปฏิบัติการ เมื่อไปหน้าถัดไปให้กดเลือกเวอร์ชันล่าสุด เลือก system type ไฟล์จะเริ่มดาวน์โหลด
+**1.PostgreSQL:**<br> →
+
+เข้าไปที่หน้า https://www.postgresql.org/download/ แล้วเลือกระบบปฏิบัติการ เมื่อไปหน้าถัดไปให้กดเลือก Download the installer เลือก system type ไฟล์จะเริ่มดาวน์โหลด <br>
+กดเข้าไปที่ installer → เลือก path app → เลือกสิ่งที่ต้องการดาวน์โหลดเพิ่มเติมโดยมันจะติ้กทุกอย่างให้อยู่แล้ว → next → ตั้ง password → Next → Next → Next → Next → Install → finish <br>
+เมื่ออยู่หน้า stack builder กดเลือก postgres port 5432 → Next → กดเลือก Categories → กด Add-ons → เลือก pgAgent , pgBouncer → กด Database Drivers → เลือก Npgsql , pglDBC , psql(system type) → กด Special Extension → เลือก PostGIS → กด Webdevelopment → เลือก PEM → Next → เลือก Download directory → Next → Next → Next → เลือก Install directory → Next → Next → Finish → Next → Next → ใส่ password → Next → กรอก username และ password → Next → OK → Finish → เลือกภาษา → 
+
+**1.pgAdmin 4: (ในกรณีที่คุณยังไม่ได้ติดตั้ง)** <br>
+
+เข้าไปที่หน้า https://www.pgadmin.org/download/ แล้วเลือกระบบปฏิบัติการ เมื่อไปหน้าถัดไปให้กดเลือกเวอร์ชันล่าสุด เลือก system type ไฟล์จะเริ่มดาวน์โหลด <br>
 
 
 &emsp;**กำหนดชื่อ Database ดังนี้: policy tracker** <br>
