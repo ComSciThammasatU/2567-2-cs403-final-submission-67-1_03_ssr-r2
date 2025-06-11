@@ -126,13 +126,13 @@
 
 **2.Neo4j:** <br>
 
-เข้าไปที่เว็ป https://neo4j.com/download/ แล้วกด Download สำหรับ Desktop เมื่อไปที่หน้าต่อไปให้กรอกข้อมูลส่วนตัวให้เรียบร้อยจากนั้นกด Download Desktop ไฟล์จะเริ่มดาวน์โหลด
+เข้าไปที่เว็ป https://neo4j.com/download/ แล้วกด Download สำหรับ Desktop เมื่อไปที่หน้าต่อไปให้กรอกข้อมูลส่วนตัวให้เรียบร้อยจากนั้นกด Download Desktop ไฟล์จะเริ่มดาวน์โหลด<br>
 
-กดเข้าไปในไฟล์ set up → only for me → next → เลือกตำแหน่งไฟลฺ์ → Install → Finish
+กดเข้าไปในไฟล์ set up → only for me → next → เลือกตำแหน่งไฟลฺ์ → Install → Finish<br>
 
-เมื่อเปิดแอพพลิเคชั่น ให้อ่านและกด agree ยอมรับเงื่อนไข → allow public and private networks → เลือกที่จัดเก็บข้อมูลของแอพ → เมื่อเจอหน้ากรอกข้อมูลให้กด skip → กดย่อ cmd ที่เด้งขึ้นมาในขั้น preparing application
-ในแถบซ้ายมือ กด + New → create project 
-ในแถบขวามือ กด + Add → ใส่ชื่อ database ว่า: PolicyTracker → ตั้งรหัสผ่าน → create → start → open
+เมื่อเปิดแอพพลิเคชั่น ให้อ่านและกด agree ยอมรับเงื่อนไข → allow public and private networks → เลือกที่จัดเก็บข้อมูลของแอพ → เมื่อเจอหน้ากรอกข้อมูลให้กด skip → กดย่อ cmd ที่เด้งขึ้นมาในขั้น preparing application<br>
+ในแถบซ้ายมือ กด + New → create project <br>
+ในแถบขวามือ กด + Add → ใส่ชื่อ database ว่า: PolicyTracker → ตั้งรหัสผ่าน → create → start → open<br>
 
 จากนั้นใส่คำสั่งดังนี้ในช่องด้านบนสุดของแถบขวา
 
