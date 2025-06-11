@@ -20,6 +20,7 @@
 **1.PostgreSQL:**<br> →
 
 เข้าไปที่หน้า https://www.postgresql.org/download/ แล้วเลือกระบบปฏิบัติการ เมื่อไปหน้าถัดไปให้กดเลือก Download the installer เลือก system type ไฟล์จะเริ่มดาวน์โหลด <br>
+
 กดเข้าไปที่ installer → เลือก path app → เลือกสิ่งที่ต้องการดาวน์โหลดเพิ่มเติมโดยมันจะติ้กทุกอย่างให้อยู่แล้ว → next → ตั้ง password → Next → Next → Next → Next → Install → finish <br>
 เมื่ออยู่หน้า stack builder กดเลือก postgres port 5432 → Next → กดเลือก Categories → กด Add-ons → เลือก pgAgent , pgBouncer → กด Database Drivers → เลือก Npgsql , pglDBC , psql(system type) → กด Special Extension → เลือก PostGIS → กด Webdevelopment → เลือก PEM → Next → เลือก Download directory → Next → Next → Next → เลือก Install directory → Next → Next → Finish → Next → Next → ใส่ password → Next → กรอก username และ password → Next → OK → Finish → เลือกภาษา → 
 
@@ -27,9 +28,13 @@
 
 เข้าไปที่หน้า https://www.pgadmin.org/download/ แล้วเลือกระบบปฏิบัติการ เมื่อไปหน้าถัดไปให้กดเลือกเวอร์ชันล่าสุด เลือก system type ไฟล์จะเริ่มดาวน์โหลด <br>
 
+กดไปที่ไฟล์ → Install for me only → Next → Accept agreement → Next → เลือกที่ตั้งไฟล์ → Next → Next → Install → Finish <br>
 
-&emsp;**กำหนดชื่อ Database ดังนี้: policy tracker** <br>
+กดเข้าแอพ pgAdmin4 → กดเลือก server → ใส่รหัส → กด server → register → server → ใส่ชื่อ name: PolicyTracker → กดแท็บ Connection → Host name: localhost → ใส่ password → save password <br>
+กดเข้า server: PolicyTracker → คลิ๊กขวา create → Database → database name: policytracker → save<br>
+กด database: policytracker → กด schema → คลิ๊กขวา public → Query Tool → ใส่คำสั่งตามนี้เพื่อสร้างตารางต่างๆ
 
+&emsp;**เมื่อวางโคตรสร้างในแต่ละตารางแล้วให้กดรันแล้วจึงใส่โค้ดสร้างตารางใหม่** <br>
 &emsp;**ตาราง campaigns** <br>
 
       CREATE TABLE IF NOT EXISTS public.campaigns (
