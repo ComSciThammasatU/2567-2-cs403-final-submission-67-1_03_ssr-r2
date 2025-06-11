@@ -238,7 +238,6 @@
 กด new terminal เช็คว่าอยู่ภายใต้ path ของโครงการไหมจากนั้นรันโค้ดตามนี้
 
       npm install
-
 # โครงสร้างโฟลเดอร์ย่อย (Directory Tree)
 
 **PolicyTracker** <br>
