@@ -16,7 +16,10 @@
 2. นายสรรพวิชช์ ช่องดารากุล 6409610786  sappawit.cho@dome.tu.ac.th 
    
 # ชุดโปรแกรมที่ต้องติดตั้งเพิ่มเติม
-**1.pgAdmin:** ให้คุณติ้กโหลดแพคเกจ postgreSQL ไปด้วยเลยจะได้ไม่ต้องลงแยก<br>
+**1.pgAdmin:** (ให้ติ้กโหลดแพคเกจ postgreSQL ไปด้วยเลยจะได้ไม่ต้องลงแยก)<br>
+
+เข้าไปที่หน้า https://www.pgadmin.org/download/ แล้วเลือกระบบปฏิบัติการ เมื่อไปหน้าถัดไปให้กดเลือกเวอร์ชันล่าสุด เลือก system type ไฟล์จะเริ่มดาวน์โหลด
+
 
 &emsp;**กำหนดชื่อ Database ดังนี้: policy tracker** <br>
 
@@ -122,6 +125,17 @@
       CREATE INDEX idx_expenses_campaign_id ON public.expenses(campaign_id);
 
 **2.Neo4j:** <br>
+
+เข้าไปที่เว็ป https://neo4j.com/download/ แล้วกด Download สำหรับ Desktop เมื่อไปที่หน้าต่อไปให้กรอกข้อมูลส่วนตัวให้เรียบร้อยจากนั้นกด Download Desktop ไฟล์จะเริ่มดาวน์โหลด
+
+กดเข้าไปในไฟล์ set up → only for me → next → เลือกตำแหน่งไฟลฺ์ → Install → Finish
+
+เมื่อเปิดแอพพลิเคชั่น ให้อ่านและกด agree ยอมรับเงื่อนไข → allow public and private networks → เลือกที่จัดเก็บข้อมูลของแอพ → เมื่อเจอหน้ากรอกข้อมูลให้กด skip → กดย่อ cmd ที่เด้งขึ้นมาในขั้น preparing application
+ในแถบซ้ายมือ กด + New → create project 
+ในแถบขวามือ กด + Add → ใส่ชื่อ database ว่า: PolicyTracker → ตั้งรหัสผ่าน → create → start → open
+
+จากนั้นใส่คำสั่งดังนี้ในช่องด้านบนสุดของแถบขวา
+
 &emsp;**สร้าง index** <br>
 
       CREATE CONSTRAINT campaign_id_unique IF NOT EXISTS
@@ -273,4 +287,6 @@ D – Delete
          └─ types/                  ← คำอธิบาย TypeScript types (นอก src)
 
 # วิธีการใช้งานแอพพลิเคชั่น
+
+
 
