@@ -348,3 +348,12 @@ D – Delete
 
 กด allow Node.js เลือกไปที่ http://localhost:3000 ก้จะเข้าสู่หน้าเว็บของโปรเจค
 
+กดเข้าไปที่หน้าเข้าสู่ระบบ จะพบกับหน้าต่อไปนี้
+![image](https://github.com/user-attachments/assets/d90f350d-34af-4f85-b543-c83ac0c5fefd)
+
+**การใช้งานหน้า Admin**
+
+
+
+**การใช้งานหน้า PR**
+
