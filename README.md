@@ -126,7 +126,7 @@
       AFTER INSERT OR UPDATE OF policy_id, allocated_budget OR DELETE
       ON public.campaigns
       FOR EACH ROW
-      EXECUTE FUNCTION public.update_policy_total_budget(
+      EXECUTE FUNCTION public.update_policy_total_budget();
 
 &emsp;**สร้าง index** <br>
       
