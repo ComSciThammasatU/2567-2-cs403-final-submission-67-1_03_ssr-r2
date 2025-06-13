@@ -201,12 +201,12 @@
 กด open folder เลือกโฟลเดอร์ที่โคลนไว้ (ชื่อ PolicyTracker)<br>
 กด ที่ตัวโปรเจ็ค (ตำแหน่งไฟล์จะอยู่ที่ root) → New file → ตั้งชื่อว่า .env.local → เขียนโค้ดดังนี้
 
-      ### 🔗 Neo4j
+      ### Neo4j
       NEO4J_URI=bolt://localhost:7687
       NEO4J_USER=your username (default: neo4j)  ← ชื่อผู้ใช้ที่คุณตั้ง
       NEO4J_PASSWORD=your password ← รหัสผ่านที่คุณตั้ง
       
-      ### 🐘 PostgreSQL (ถ้ามีใช้)
+      ### PostgreSQL
       POSTGRES_USER=your username (default: postgres)  ← ชื่อผู้ใช้ที่คุณตั้ง
       POSTGRES_PASSWORD=your password ← รหัสผ่านที่คุณตั้ง
       POSTGRES_DB=policy_tracker
@@ -214,7 +214,7 @@
       POSTGRES_PORT=5432
       
       
-      ### 🔥 Firebase
+      ### Firebase
       NEXT_PUBLIC_FIREBASE_API_KEY=AIzaSyCaFgsyBvv7xYOfsQM-wf7P7kx7JJ9OubA
       NEXT_PUBLIC_FIREBASE_AUTH_DOMAIN=policy-tracker-kp.firebaseapp.com
       NEXT_PUBLIC_FIREBASE_PROJECT_ID=policy-tracker-kp
